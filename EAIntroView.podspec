@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Evgeny Aleksandrov" => "evgeny@aleksandrov.ws" }
 
   s.platform     = :ios, '5.0'
-  s.source       = { :git => "https://github.com/ealeksandrov/EAIntroView.git", :tag => "1.1.1" }
+  s.source       = { :git => "https://github.com/brotchie/EAIntroView.git", :branch => "portalcharts" }
   s.source_files  = 'EAIntroView/EAIntro{Page,View}.{h,m}'
   s.requires_arc = true
 
