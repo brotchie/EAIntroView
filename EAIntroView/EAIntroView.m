@@ -155,8 +155,14 @@
         descLabel.backgroundColor = [UIColor clearColor];
         descLabel.textAlignment = NSTextAlignmentCenter;
         descLabel.userInteractionEnabled = NO;
-        //[descLabel sizeToFit];
+        [descLabel sizeToFit];
         [pageView addSubview:descLabel];
+    }
+    
+    if (page.additionalView) {
+        CGRect additionalViewFrame = CGRectMake(0, self.frame.size.height - page.additionalPositionY, self.scrollView.frame.size.width, 500);
+        page.additionalView.frame = additionalViewFrame;
+        [pageView addSubview:page.additionalView];
     }
     
     *xIndex += self.scrollView.frame.size.width;

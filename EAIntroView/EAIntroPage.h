@@ -22,6 +22,8 @@
 @property (nonatomic, retain) UIFont *descFont;
 @property (nonatomic, retain) UIColor *descColor;
 @property (nonatomic, assign) CGFloat descPositionY;
+@property (nonatomic, retain) UIView *additionalView;
+@property (nonatomic, assign) CGFloat additionalPositionY;
 
 + (EAIntroPage *)page;
 
